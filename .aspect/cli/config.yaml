@@ -1,0 +1,12 @@
+configure:
+  languages:
+    python: true
+lint:
+  aspects:
+    - //tools/lint:linters.bzl%shellcheck
+    - //tools/lint:linters.bzl%ruff
+
+plugins:
+    - name: fix-visibility
+      from: github.com/aspect-build/plugin-fix-visibility
+      version: v0.1.0

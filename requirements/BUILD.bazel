@@ -1,0 +1,14 @@
+load("@rules_python//python:pip.bzl", "compile_pip_requirements")
+
+compile_pip_requirements(
+    name = "requirements",
+    requirements_in = "//:pyproject.toml",
+    requirements_txt = "runtime.txt",
+)
+
+compile_pip_requirements(
+    name = "requirements.test",
+    data = ["runtime.txt"],
+    requirements_in = "test.in",
+    requirements_txt = "test.txt",
+)
