@@ -67,6 +67,7 @@ manifest:
     google.protobuf.pyext: protobuf
     google.protobuf.pyext.cpp_message: protobuf
     google.protobuf.reflection: protobuf
+    google.protobuf.runtime_version: protobuf
     google.protobuf.service: protobuf
     google.protobuf.service_reflection: protobuf
     google.protobuf.source_context_pb2: protobuf

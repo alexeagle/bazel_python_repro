@@ -2,7 +2,7 @@ load("@aspect_rules_py//py:defs.bzl", "py_binary", "py_pytest_main", "py_test")
 
 py_pytest_main(
     name = "__test__",
-    deps = ["@pip.test//pytest"],
+    deps = ["@pip//pytest"],
 )
 
 py_binary(

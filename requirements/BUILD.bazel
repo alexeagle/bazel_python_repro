@@ -7,8 +7,11 @@ compile_pip_requirements(
 )
 
 compile_pip_requirements(
-    name = "requirements.test",
-    data = ["runtime.txt"],
-    requirements_in = "test.in",
-    requirements_txt = "test.txt",
+    name = "requirements.all",
+    data = [
+        "runtime.txt",
+        "test.in",
+    ],
+    requirements_in = "all.in",
+    requirements_txt = "all.txt",
 )
